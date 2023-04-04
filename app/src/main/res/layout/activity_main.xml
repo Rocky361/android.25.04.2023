@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root / Parent nur 1 Rootelement erlaubt -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <!-- Child von LL(root) -->
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textColor="@color/red"
+        android:textSize="44sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        />
+    <!--color wird aus colors.xml genommen, neue colors selber einfügen-->
+    <!-- Child von LL(root) / Parent von Textview und Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <!-- Child von LL / sibling von Button -->
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/autor"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            />
+        <!-- Child von LL / sibling von Textview -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/absenden"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:backgroundTint="@color/green"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

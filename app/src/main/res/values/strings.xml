@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">buttelmann.02.03.2023</string>
+    <string name="autor">Rocky Buttelmann</string>
+    <string name="absenden">Absenden</string>
+    <string name="text">Text</string>
+    <string name="edittext">Edittext</string>
+    <string name="button">Button</string>
+    <string name="huhu">huhu</string>
+    <string name="red">RED</string>
+    <string name="yellow">YELLOW</string>
+    <string name="orange">ORANGE</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
+    <string name="indigo">INDIGO</string>
+    <string name="violet">VIOLET</string>
+</resources>
