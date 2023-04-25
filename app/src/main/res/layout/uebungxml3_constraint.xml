@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textred"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="@string/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textorange"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="@string/orange"
+        app:layout_constraintEnd_toStartOf="@+id/textyellow"
+        app:layout_constraintStart_toEndOf="@+id/textred"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textyellow"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="@string/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textblue"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="@string/blue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textviolet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textorange" />
+
+    <TextView
+        android:id="@+id/textgreen"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/textblue"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/green"
+        app:layout_constraintBottom_toTopOf="@+id/textviolet"
+        app:layout_constraintEnd_toStartOf="@+id/textblue"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textred"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <TextView
+        android:id="@+id/textindigo"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/textblue"
+        android:background="@color/indigo"
+        android:gravity="center"
+        android:text="@string/indigo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textviolet"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toEndOf="@+id/textblue"
+        app:layout_constraintTop_toBottomOf="@+id/textyellow" />
+
+    <TextView
+        android:id="@+id/textviolet"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/violet"
+        android:gravity="center"
+        android:text="@string/violet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
